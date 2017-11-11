@@ -38,7 +38,7 @@ shinyServer(function(input, output) {
 
 
   riskm <- reactive((1-0.88431^(exp(riskma()-23.9388)))*100)
-  riskf <- reactive((1-0.94833^(exp(riskma()-26.0145)))*100)
+  riskf <- reactive((1-0.94833^(exp(riskfa()-26.0145)))*100)
 
   output$outm <- renderText({ paste(round(riskm(),1)," %") })
   output$outf <- renderText({ paste(round(riskf(),1)," %") })

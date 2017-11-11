@@ -30,7 +30,7 @@ shinyUI(fluidPage(
 
         tabPanel("Instructions",
                 p("Enter the information on the left side and check the prediction of the
-              risk of developing cardiovascular disease in 10 years in the Results tab")),
+              risk of developing cardiovascular disease in 10 years in the Result tab")),
 
        tabPanel("References",
                 p("Regression coefficients and hazard ratios were obtained from
