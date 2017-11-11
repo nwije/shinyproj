@@ -5,9 +5,8 @@ account: nwije
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 234401
-bundleId: 1070349
+bundleId: 1070398
 url: https://nwije.shinyapps.io/cvd_screenin/
-when: 1510417812.17477
+when: 1510421158.13678
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: Pitch-rpubs.html|Pitch.md|Pitch.Rpres|Pitch-figure/unnamed-chunk-2-1.png

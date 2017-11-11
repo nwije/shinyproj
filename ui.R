@@ -13,7 +13,7 @@ shinyUI(fluidPage(
     sidebarPanel(
        numericInput("age", "What is your age?", value=30, min=1, max=99, step=1),
        selectInput("sex", "Gender", choices = list(Male=0, Female=1)),
-       radioButtons("rxbp", "On treatment for high blood pressure?", choices = list(No=0, Yes=1)),
+       radioButtons("rxbp", "Are you on treatment for high blood pressure?", choices = list(No=0, Yes=1)),
        numericInput("sbp", "What is your systolic blood pressure?", value=120, min=50, max=250, step=1),
        numericInput("height","What is your height in cm?",value=160, min=100, max=250, step=1),
        numericInput("weight", "What is your weight in kg?", value=70, min=25, max=250, step=1),
@@ -24,7 +24,7 @@ shinyUI(fluidPage(
     # Show a plot of the generated distribution
     mainPanel(
       tabsetPanel(
-       tabPanel("Result", h4("Your 10 year risk of dying from cardiovasular disease is:"),
+       tabPanel("Result", h4("Your 10 year risk of developing cardiovasular disease is:"),
                 conditionalPanel(condition="input.sex==0",textOutput(outputId="outm")),
                 conditionalPanel(condition="input.sex==1",textOutput(outputId="outf"))),
 
